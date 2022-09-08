@@ -17,7 +17,7 @@ export class AppComponent {
 
   ngOnInit(): void {
     this.columnDefs = [
-      { field: 'name', sortable: true },
+      { field: 'name',sortable: true },
       { field: 'price',  sortable: true },
       { field: 'category', sortable: true, },
     ];

@@ -17,11 +17,10 @@ export class AppComponent {
 
   ngOnInit(): void {
     this.columnDefs = [
-      { field: 'category', sortable: true },
       { field: 'name', sortable: true },
-      { field: 'price', sortable: true },
+      { field: 'price',  sortable: true },
+      { field: 'category', sortable: true, },
     ];
-
 
     this.cookiesData = this.api.get().subscribe((res) => {
       this.users = res;
